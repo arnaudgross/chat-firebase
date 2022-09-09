@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat on Firebase</title>
+</head>
+<body>
+    <main>
+        <section class="userProfile">
+            <h2>This is a secured conversation</h2>
+            <button class="login">Please login to access the chat</button>
+        </section>
+        <section class="chatbox" style="display:none;">
+            <section class="messages"></section>
+            <section class="add">
+                <form class="messageForm">
+                    <input class="chatMessage" type="text" placeholder="Message...">
+                    <button>Send</button>
+                    <br/>
+                    <img style="width:100px; margin-top:10px;" src="" class="gif-preview">
+                </form>
+            </section>
+        </section>
+        <section class="gifs" style="display:none;">
+            <h2>Search a gif to send</h2>
+            <section class="gif-input-container">
+                <input type="text" class="gif-search" placeholder="Type something...">
+            </section>
+            <section class="gif-results"></section>
+        </section>
+    </main>
+</body>
+</html>
